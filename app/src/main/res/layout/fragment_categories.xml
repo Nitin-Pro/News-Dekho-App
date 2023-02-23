@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="0dp"
+    tools:context=".CategoriesFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerViewCategories"
+        android:layout_width="match_parent"
+        android:layout_height="663dp"
+        android:layout_gravity="bottom" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fadeScrollbars="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1"
+                android:text="@string/entertainment" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1"
+                android:text="@string/international" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1"
+                android:text="@string/business" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1"
+                android:text="@string/sports"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1"
+                android:text="@string/science" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>
